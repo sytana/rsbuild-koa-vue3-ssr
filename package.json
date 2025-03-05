@@ -1,0 +1,30 @@
+{
+  "name": "rsbuild-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "rsbuild build",
+    "dev:xiezq.www": "node ./src/server/development.mjs",
+    "preview:xiezq.www": "node ./src/server/production.mjs"
+  },
+  "dependencies": {
+    "@vue/server-renderer": "^3.5.13",
+    "fs-extra": "^11.3.0",
+    "koa": "^2.15.4",
+    "koa-connect": "^2.1.0",
+    "koa-static": "^5.0.0",
+    "unplugin-auto-import": "^19.1.0",
+    "unplugin-vue-components": "^28.4.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@rsbuild/core": "^1.2.8",
+    "@rsbuild/plugin-stylus": "^1.0.8",
+    "@rsbuild/plugin-vue": "^1.0.5",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0"
+  }
+}
