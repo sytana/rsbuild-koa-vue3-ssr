@@ -9,9 +9,8 @@ const templateHtml = fse.readFileSync(path.resolve(process.cwd(), 'src/server/te
 
 let manifest;
 
-const { content } = await loadConfig();
-
-const rsbuild = await createRsbuild({ rsbuildConfig: content });
+const rsbuildConfig = await loadConfig();
+const rsbuild = await createRsbuild({ rsbuildConfig: rsbuildConfig.content });
 
 rsbuild.onDevCompileDone(async () => {
     manifest = await fse.promises.readFile(path.resolve(process.cwd(), 'dist/xiezq.www.client/manifest.json'), 'utf-8');
@@ -26,6 +25,8 @@ const rsbuildServer = await rsbuild.createDevServer();
 koa.use(koaConnect(rsbuildServer.middlewares));
 
 koa.use(async (ctx, next) => {
+    console.log(ctx.request.path);
+
     if (ctx.request.path == '/') {
         try {
             const { createApp } = await rsbuildServer.environments['xiezq.www.server'].loadBundle('index');

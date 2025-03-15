@@ -24,6 +24,10 @@ export default defineConfig({
     },
     server: {
         middlewareMode: true,
+        // cors: {
+        //     origin: '*',
+        //     credentials: true,
+        // },
     },
     environments: {
         'xiezq.www.client': {

@@ -1,0 +1,30 @@
+{
+  "allFiles": [
+    "/css/index.css",
+    "/js/index.js",
+    "/js/lib-vue.js",
+    "/js/vendors-node_modules_pnpm_rspack_core_1_2_8__swc_helpers_0_5_15_node_modules_rspack_core_dist-8ae292.js",
+    "/js/index.js.map",
+    "/js/lib-vue.js.map",
+    "/js/vendors-node_modules_pnpm_rspack_core_1_2_8__swc_helpers_0_5_15_node_modules_rspack_core_dist-8ae292.js.map"
+  ],
+  "entries": {
+    "index": {
+      "assets": [
+        "js/vendors-node_modules_pnpm_rspack_core_1_2_8__swc_helpers_0_5_15_node_modules_rspack_core_dist-8ae292.js.map",
+        "js/lib-vue.js.map",
+        "js/index.js.map"
+      ],
+      "initial": {
+        "js": [
+          "/js/vendors-node_modules_pnpm_rspack_core_1_2_8__swc_helpers_0_5_15_node_modules_rspack_core_dist-8ae292.js",
+          "/js/lib-vue.js",
+          "/js/index.js"
+        ],
+        "css": [
+          "/css/index.css"
+        ]
+      }
+    }
+  }
+}
