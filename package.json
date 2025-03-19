@@ -6,11 +6,12 @@
   "scripts": {
     "lint": "eslint .",
     "build": "rsbuild build",
-    "dev:xiezq.www": "node ./src/server/development.mjs",
-    "preview:xiezq.www": "node ./src/server/production.mjs"
+    "dev:xiezq.www": "cross-env NODE_ENV=development node --experimental-vm-modules ./src/server/index.js",
+    "preview:xiezq.www": "cross-env NODE_ENV=production node --experimental-vm-modules ./src/server/index.js"
   },
   "dependencies": {
     "@vue/server-renderer": "^3.5.13",
+    "cross-env": "^7.0.3",
     "fs-extra": "^11.3.0",
     "koa": "^2.16.0",
     "koa-connect": "^2.1.0",

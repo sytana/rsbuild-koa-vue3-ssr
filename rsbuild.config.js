@@ -24,10 +24,6 @@ export default defineConfig({
     },
     server: {
         middlewareMode: true,
-        // cors: {
-        //     origin: '*',
-        //     credentials: true,
-        // },
     },
     environments: {
         'xiezq.www.client': {
@@ -64,6 +60,18 @@ export default defineConfig({
                 target: 'node',
                 distPath: {
                     root: './dist/xiezq.www.server',
+                }
+            },
+            tools: {
+                rspack: {
+                    experiments: {
+                        outputModule: true,
+                    },
+                    output: {
+                        chunkFormat: 'module',
+                        library: { type: 'module' },
+                        module: true,
+                    },
                 }
             }
         },

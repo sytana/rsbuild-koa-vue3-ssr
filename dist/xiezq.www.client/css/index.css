@@ -1,0 +1,18 @@
+.src-pages-xiezq-www-app__content-g9Mqao {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.1;
+  display: flex;
+}
+.src-pages-xiezq-www-app__content-g9Mqao h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.src-pages-xiezq-www-app__content-g9Mqao p {
+  opacity: .5;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
